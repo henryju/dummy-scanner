@@ -31,7 +31,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Analyze with SonarCloud
-      uses: SonarSource/sonarcloud-github-action@8ba34502532722924984c10c25f6f62e1a8555cc
+      uses: SonarSource/sonarcloud-github-action@b6e9e03ee48163392532498c5ff4a4eb80a28916
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   # Generate a token on Sonarcloud.io, add it to the secrets of this repo with the name SONAR_TOKEN (Settings > Secrets > Actions > add new repository secret)
       with:
